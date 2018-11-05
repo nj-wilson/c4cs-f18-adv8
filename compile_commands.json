@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-o",
+            "math",
+            "math.cpp"
+        ],
+        "directory": "/home/nick/Documents/Fall2018/EECS398/week9",
+        "file": "math.cpp"
+    }
+]
