@@ -4,3 +4,4 @@ python:
 
 script:
         - coverage run test_rpn.py -m unittest
+        - coverage report
