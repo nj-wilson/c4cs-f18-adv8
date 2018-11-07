@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import colored
+from colored import stylize
 
 
 def calculate(arg):
@@ -19,6 +21,8 @@ def calculate(arg):
                 result = val1 - val2
             elif token == '^':
                 result = val1 ** val2
+            elif token == '*':
+                result = val1 * val2
 
             stack.append(result)
 
@@ -32,7 +36,10 @@ def main():
     while True:
         try:
             result = calculate(input("rpn calc> "))
-            print(result)
+            if result < 0:
+                print(stylize(result, colored.fg("red")))
+            else:
+                print(stylize(result, colored.fg("green")))
         except ValueError:
             pass
 
