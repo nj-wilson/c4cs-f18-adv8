@@ -6,6 +6,6 @@ install:
         - pip install colored
         - pip install python-coveralls
 script:
-        - py.test --cov-report term --cov=. test_rpn.py
+        - coverage run test_rpn.py -m unittest
 after_success:
         - coveralls
