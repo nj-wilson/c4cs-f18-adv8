@@ -3,7 +3,6 @@ python:
         - "3.5"
 install:
         - pip install coverage
-        - pip install pytest-cov
         - pip install colored
         - pip install python-coveralls
 script:
