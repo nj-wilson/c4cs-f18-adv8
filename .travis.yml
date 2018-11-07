@@ -5,6 +5,7 @@ install:
         - pip install coverage
         - pip install pytest-cov
         - pip install colored
+        - pip install coveralls
 script:
         - py.test --cov-report term --cov=. test_rpn.py
-        - py.test --cov-report html --cov=. test_rpn.py
+        - coveralls
