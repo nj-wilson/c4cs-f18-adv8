@@ -7,4 +7,4 @@ install:
         - pip install colored
 script:
         - py.test --cov-report term --cov=. test_rpn.py
-        - py.tesl --cov-report html --cov=. test_rpn.py
+        - py.test --cov-report html --cov=. test_rpn.py
